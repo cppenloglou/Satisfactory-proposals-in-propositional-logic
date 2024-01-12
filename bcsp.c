@@ -246,6 +246,7 @@ void hill_climbing(char **argv)
 	}
 	for(i=0;i<N;i++)
 		fprintf(outfile,"%d ",vector[i]);
+	fprintf(outfile, "%f", ((float) t2-t1)/CLOCKS_PER_SEC);
 	fclose(outfile);
 	
 }
@@ -394,6 +395,7 @@ void depth_first(char **argv)
 			}
 			for(i=0;i<N;i++)
 				fprintf(outfile,"%d ",vector[i]);
+			fprintf(outfile, "%f", ((float) t2-t1)/CLOCKS_PER_SEC);
 			fclose(outfile);
 			return;
 		}

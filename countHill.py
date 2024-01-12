@@ -5,7 +5,7 @@ def count_files_with_prefix_and_extension(prefix, start, end, extension):
     counts_per_i = {}
 
     for i in range(start, end + 1):
-        filename_pattern = re.compile(f"{prefix}{i}.*{extension}")
+        filename_pattern = re.compile(f"{prefix}{i}_M{160+i*40}.*{extension}")
         matching_files = [file for file in os.listdir() if filename_pattern.match(file)]
         counts_per_i[i] = len(matching_files)
 
@@ -19,7 +19,7 @@ def write_results_to_file(results, output_file):
 def main():
     prefix = "solution_hill_test"
     start_number = 1
-    end_number = 8
+    end_number = 26
     file_extension = ".txt"
     output_file = "hill_results.txt"
 

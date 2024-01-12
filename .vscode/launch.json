@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/xriso/OneDrive/Computer/CPPenloglou/Uom/5_examino/artificial_intelligence/exercices/HW2/BCSP2023/SourceCode/Satisfactory-proposals-in-propositional-logic",
+      "program": "c:/Users/xriso/OneDrive/Computer/CPPenloglou/Uom/5_examino/artificial_intelligence/exercices/HW2/BCSP2023/SourceCode/Satisfactory-proposals-in-propositional-logic/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
