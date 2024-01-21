@@ -404,7 +404,15 @@ void depth_first(char **argv)
 	}
 
 	// If the stack is empty without any solution found...
+	FILE *outfile;
+	outfile=fopen(argv[3],"w");
 	t2=clock();
+	if (outfile==NULL) {
+				printf("Cannot open output file. Now exiting...\n");
+				return;
+			}
+	fprintf(outfile, "%f", ((float) t2-t1)/CLOCKS_PER_SEC);
+	fclose(outfile);
 	printf("\n\nNO SOLUTION EXISTS. Proved by depth-first!\n");
 	printf("Time spent: %f secs\n",((float) t2-t1)/CLOCKS_PER_SEC);
 	printf("Number of steps: %d\n",steps);
